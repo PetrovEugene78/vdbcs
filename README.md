@@ -13,3 +13,8 @@ Information in a source file should be in columns where:
 * in the second column - resource language
 * in the third column - link to the video stream
 
+Information in columns in a resource file must be separated by a space:
+```text
+    A Eng rtmp://ip/eng/origin
+    B Rus rtmp://ip/rus/origin
+```
