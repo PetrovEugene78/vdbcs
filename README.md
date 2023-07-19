@@ -33,7 +33,7 @@ $ git clone https://github.com/PetrovEugene78/vdbcs new_directory
 ```
 ## Usage
 ``` bash
-Usage: vdbcs [OPTION]
+Usage: ./vdbcs.sh [OPTION]
               r, -r  display notes in Russian
                   1  creating a video dashboard for one video sources
                   4  creating a video dashboard for four (2x2) video sources
