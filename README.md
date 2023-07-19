@@ -22,3 +22,14 @@ Information in columns in a CSV file ***sources.list.csv*** must be separated by
     A,Eng,rtmp://ip/eng/origin
     B,Rus,rtmp://ip/rus/origin
 ```
+## Instalation
+Download the project to the current directory:
+``` bash
+$ git clone https://github.com/PetrovEugene78/vdbcs
+```
+If the project needs to be uploaded to a different directory:
+``` bash
+$ git clone https://github.com/PetrovEugene78/vdbcs new_directory
+```
+## Usage
+
