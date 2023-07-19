@@ -32,4 +32,10 @@ If the project needs to be uploaded to a different directory:
 $ git clone https://github.com/PetrovEugene78/vdbcs new_directory
 ```
 ## Usage
-
+Usage: vdbcs [OPTION]
+              r, -r  display notes in Russian
+                  1  creating a video dashboard for one video sources
+                  4  creating a video dashboard for four (2x2) video sources
+                  9  creating a video dashboard for nine (3x3) video sources
+                 16  creating a video dashboard for sixteen (4x4) video sources
+      h, -h, --help  display this help and exit"
