@@ -113,7 +113,7 @@ intended for creating video dashboards for: 1, 4 (2x2), 9 (3x3), 16 (4x4) and
 
 Mandatory arguments to long options are mandatory for short options too.
               r, -r  display notes in Russian
-        c, -c, -csv  use as a data source CSV file
+        c, -c, -csv  use CSV file as data source
                   1  creating a video dashboard for one video sources
                   4  creating a video dashboard for four (2x2) video sources
                   9  creating a video dashboard for nine (3x3) video sources
