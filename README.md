@@ -35,7 +35,7 @@ $ git clone https://github.com/PetrovEugene78/vdbcs new_directory
 ``` bash
 Usage: ./vdbcs.sh [OPTION]
               r, -r  display notes in Russian
-        c, -c, -csv  use as a data source CSV file
+        c, -c, -csv  use CSV file as data source
                   1  creating a video dashboard for one video sources
                   4  creating a video dashboard for four (2x2) video sources
                   9  creating a video dashboard for nine (3x3) video sources
