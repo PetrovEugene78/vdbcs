@@ -28,7 +28,9 @@ function get_sources_from_txt() {
 function get_sources_from_csv() {
   i=0
   sed -i 's/-,/,/g' $sources_list_csv_file
+  sed -i 's/ ,/,/g' $sources_list_csv_file
   sed -i 's/  A/A/g' $sources_list_csv_file
+  sed -i 's/  R/R/g' $sources_list_csv_file
   IFS=","
   while read line; do
     read -a arr <<< "$line"
@@ -85,12 +87,12 @@ function create_vdb() {
         if [ $i -lt 10 ]
         then
           sed -i 's/0'$i'lang/'${lang_array[$index]}' ('${instance[$index]}', '${!param}')/g' $dest_filename
-          sed -i 's/0'$i' lang/'${lang_array[$index]}'/g' $dest_filename
+          sed -i 's/0'$i' lang/'${instance[$index]}'-'${lang_array[$index]}'/g' $dest_filename
           sed -i 's/0'$i' RTMP/'${lang_array[$index]}'/g' $dest_filename
           sed -i 's!0'$i'rtmp!'${sources_array[$index]}'!g' $dest_filename
         else
           sed -i 's/'$i'lang/'${lang_array[$index]}' ('${instance[$index]}', '${!param}')/g' $dest_filename
-          sed -i 's/'$i' lang/'${lang_array[$index]}'/g' $dest_filename
+          sed -i 's/'$i' lang/'${instance[$index]}'-'${lang_array[$index]}'/g' $dest_filename
           sed -i 's/'$i' RTMP/'${lang_array[$index]}'/g' $dest_filename
           sed -i 's!'$i'rtmp!'${sources_array[$index]}'!g' $dest_filename
         fi
